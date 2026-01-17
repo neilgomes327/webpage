@@ -1,16 +1,20 @@
 const express = require('express');
 const app = express(); 
+const path = require('path');
 
 const PORT = process.env.PORT || 3000; 
 
+// Serve everything inside /public (css, js, images, etc.)
+app.use(express.static(path.join(__dirname, 'public')));
 
 
-// Define a GET route for the homepage ("/")
+// Serve the homepage
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
 app.listen(PORT , () => {
-    console.log('server live on port ${PORT}');
+    console.log(`server live on port ${PORT}`);
 });
 
 

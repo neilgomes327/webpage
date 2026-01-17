@@ -1,0 +1,33 @@
+.topnav{
+    background-color: black;
+
+}
+
+.topnav ul{
+    list-style-type: none; 
+    overflow: hidden;
+    justify-content: center;    /* center horizontally */
+}
+
+.topnav li{
+    float: left;
+}
+
+.topnav a{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px; 
+    display: block; 
+}
+
+.topnav a:hover{
+    background-color: #1DB954;
+}
+
+.header{
+    text-align: center; 
+}
+
+.body{
+    background-color: red;
+}
