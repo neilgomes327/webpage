@@ -18,16 +18,38 @@
     font-size: 20px;
     padding: 20px; 
     display: block; 
+    color:  #e5e7eb;   /* soft white */
+    text-decoration: none;
+    
+
 }
 
 .topnav a:hover{
-    background-color: #1DB954;
+    background-color:#ffffff;
+    color: #111111;
+}
+
+.topnav a.active{
+    background-color: #ffffff;; /* same as hover */
+    color: #111111;
+    font-weight: 600;
 }
 
 .header{
     text-align: center; 
 }
 
-.body{
-    background-color: red;
+body{
+    background-image: url("GSFC_20171208_Archive_e000282~orig.jpg")
+}
+
+
+.container1{
+    background-color: white;
+    max-width: 900px;          /* keeps text readable */
+    margin: 80px auto;         /* centers + pushes down from navbar */
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);padding: 40px 50px;        /* space inside the box */
+    border-radius: 8px;        /* subtle modern rounding */
+    line-height: 1.7;          /* BIG readability upgrade */
 }
